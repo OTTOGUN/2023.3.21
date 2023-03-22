@@ -203,3 +203,36 @@ int main(){
 
         printf("NO");
     }*/
+
+/*
+int search(int arr[3][3],int* f,int* g,int a){
+    int x = *f;
+    int y = *g;
+    while(x < 3 && y >= 0){
+        if(arr[x][y] < a){
+            x++;
+        }else if(arr[x][y] > a){
+            y--;
+        }else if(arr[x][y] == a){
+            *f = x;
+            *g = y;
+            return 1;
+        }else{
+            return 0;
+        }
+    }
+}
+
+int main(){
+    int a = 0;
+    int x = 0 , y = 3;
+    int arr[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
+    printf("请输入想要查找的数字");
+    scanf("%d",&a);
+    int ret = search(arr,&x,&y,a);
+    if(ret == 1){
+        printf("找到了,坐标是%d,%d",x,y);
+    }else{
+        printf("没找到");
+    }
+}*/
